@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --text: #1b2430;
+  --card: #ffffff;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hero {
+  text-align: center;
+  padding: 72px 20px 48px;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.hero p {
+  margin: 0 0 24px;
+  color: #4b5563;
+}
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+
+main {
+  width: min(900px, 92%);
+  margin: 0 auto 48px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.span-2 {
+  grid-column: 1 / -1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.muted {
+  margin: 0 0 12px;
+  color: #6b7280;
+}
+
+.project-list,
+.link-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.diary-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.diary-note {
+  font-size: 0.95rem;
+}
+
+.diary {
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-family: inherit;
+  font-size: 0.98rem;
+  resize: vertical;
+  background: #fff;
+  color: var(--text);
+}
+
+footer {
+  text-align: center;
+  padding: 24px 16px 32px;
+  color: #6b7280;
+}
+
+@media (min-width: 920px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
